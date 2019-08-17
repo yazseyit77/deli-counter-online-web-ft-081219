@@ -8,7 +8,7 @@ def line(x_line)
       array.push("#{index}. #{name}")
   end
 end
-  return "The line is currently: #{array.join(" ")}"
+  puts "The line is currently: #{array.join(" ")}"
 end
 
 def take_a_number(katz_deli, names)
