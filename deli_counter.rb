@@ -1,13 +1,13 @@
 # Write your code here.
-katz_deli = []
-def line(array)
-  if array.length > 1
-    string = "The line is currently:"
-    array.each {|val, index| output << " #{index+1}. #{val}"}
-    puts string
-  else
+def line(x_line)
+  array = []
+  if x_line.length == 0
     "The line is currently empty"
+  else
+    x_line.each.with_index(1) do |name, index|
+      array.push("#{index}. #{name}")
   end
+  return "The line is currently: #{array.join(" ")}"
 end
 
 def take_a_number(katz_deli, names)
