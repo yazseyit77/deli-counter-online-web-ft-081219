@@ -7,8 +7,8 @@ def line(x_line)
     x_line.each.with_index(1) do |name, index|
       array.push("#{index}. #{name}")
   end
-  return "The line is currently: #{array.join(" ")}"
 end
+  return "The line is currently: #{array.join(" ")}"
 end
 
 def take_a_number(katz_deli, names)
