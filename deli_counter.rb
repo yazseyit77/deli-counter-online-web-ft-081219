@@ -1,14 +1,11 @@
 # Write your code here.
 def line(katz_deli)
-  array = []
-  if katz_deli == 0
-     "The line is currently empty"
+  if katz_deli.length > 1
+    string = "The line is currently:"
+    katz_deli.each {|val, index| output << " #{index+1}. #{val}"} 
+    puts string
   else
-    counter = 0
-    while counter < katz_deli.length
-      array << "The line is currently: #{counter}. #{name}"
-    counter += 1
-  end
+    "The line is currently empty"
   end
 end
 
