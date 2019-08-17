@@ -2,7 +2,7 @@
 def line(x_line)
   array = []
   if x_line.length == 0
-    "The line is currently empty"
+    puts "The line is currently empty."
   else
     x_line.each.with_index(1) do |name, index|
       array.push("#{index}. #{name}")
