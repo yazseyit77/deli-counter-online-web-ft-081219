@@ -9,6 +9,7 @@ def line(x_line)
   end
   return "The line is currently: #{array.join(" ")}"
 end
+end
 
 def take_a_number(katz_deli, names)
     katz_deli = []
