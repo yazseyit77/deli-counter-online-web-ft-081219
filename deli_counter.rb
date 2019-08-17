@@ -9,15 +9,9 @@ def line(x_line)
   end
   puts "The line is currently: #{array.join(" ")}"
 end
-
 end
 
-def take_a_number(katz_deli, names)
-    katz_deli = []
-    counter = 1
-    names.each do |name|
-      katz_deli << "Welcome, #{name}. You are number #{counter} in line."
-      counter += 1
-    end
-  return katz_deli
+def take_a_number(katz_deli, name)
+    katz_deli.push(name)
+    puts "Welcome, #{name}. You are number #{katz_deli.length} in line."
 end
