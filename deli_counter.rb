@@ -1,6 +1,7 @@
 # Write your code here.
-def line(katz_deli)
-  if katz_deli.length > 1
+katz_deli = []
+def line(array)
+  if array.length > 1
     string = "The line is currently:"
     katz_deli.each {|val, index| output << " #{index+1}. #{val}"}
     puts string
